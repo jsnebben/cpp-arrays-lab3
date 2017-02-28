@@ -20,6 +20,44 @@ using namespace std;
 
 int main()
 {
+	int arr[5];
+	int highestNum;
+	int lowestNum;
+	cout << "Enter 5 numbers: ";
+
+	for (int i = 0; i < 5; i++)
+	{
+		cin >> arr[i];
+	}
+
+	cout << "Numbers in reverse order" << endl;
+	for (int i = 4; i >= 0; i--)
+	{
+		cout << arr[i] << endl;
+	}
+
+	highestNum = arr[0];
+	cout << "Highest number: ";
+	for (int i = 1; i < 5; i++)
+	{
+		if (highestNum < arr[i])
+		{
+			highestNum = arr[i];
+		}
+	}
+	cout << highestNum << endl;
+
+
+	lowestNum = arr[0];
+	cout << "Lowest number: ";
+	for (int i = 1; i < 5; i++)
+	{
+		if (lowestNum > arr[i])
+		{
+			lowestNum = arr[i];
+		}
+	}
+	cout << lowestNum << endl;
 
 
 	_getch();
